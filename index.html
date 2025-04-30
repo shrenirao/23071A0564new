@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#" id="nav-register">Register</a></li>
+        <li><a href="#" id="nav-login">Login</a></li>
+        <li><a href="#" id="nav-catalog">Catalog</a></li>
+        <li><a href="#" id="nav-cart">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Registration Page -->
+    <section id="register-page" class="page hidden">
+      <h2>Register</h2>
+      <form id="register-form">
+        <label for="reg-username">Username</label>
+        <input type="text" id="reg-username" name="username" required />
+        <label for="reg-password">Password</label>
+        <input type="password" id="reg-password" name="password" required />
+        <button type="submit">Register</button>
+      </form>
+      <p id="register-message" class="message"></p>
+    </section>
+
+    <!-- Login Page -->
+    <section id="login-page" class="page hidden">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="login-username">Username</label>
+        <input type="text" id="login-username" name="username" required />
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" name="password" required />
+        <button type="submit">Login</button>
+      </form>
+      <p id="login-message" class="message"></p>
+    </section>
+
+    <!-- Catalog Page -->
+    <section id="catalog-page" class="page hidden">
+      <h2>Product Catalog</h2>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <!-- Cart Page -->
+    <section id="cart-page" class="page hidden">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div id="cart-total"></div>
+      <button id="checkout-btn">Checkout</button>
+    </section>
+  </main>
+  <script src="app.js"></script>
+  </body>
+  </html>
+
+ 
